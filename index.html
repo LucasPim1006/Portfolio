@@ -1,188 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Lucas Pimentel</title>
-
-  <!-- Fontes do Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- Nosso estilo CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Lucas Pimentel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- BARRA DE NAVEGAÇÃO -->
-  <header>
-    <nav class="menu">
-      <div class="logo">Lucas.dev</div>
-      
-      <ul class="links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre mim</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="https://github.com/LucasPim1006" target="_blank">GitHub</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+    <header>
+        <div class="menu">
+            <h1 class="logo">Portfólio</h1>
+            
+            <ul class="links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="https://github.com/LucasPim1006" target="_blank">GitHub</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
 
-      <!-- Botão para trocar entre modo claro e escuro -->
-      <button id="btn-tema" title="Trocar Tema">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-    </nav>
-  </header>
-
-  <!-- APRESENTAÇÃO INICIAL -->
-  <section id="inicio" class="hero">
-    <div class="hero-texto">
-      <h1>LUCAS <br> <span>PIMENTEL</span></h1>
-      <p id="texto-digitado"></p>
-      <a href="#projetos" class="btn-principal">Ver Projetos</a>
-    </div>
-
-    <div class="hero-foto">
-      <img src="eu.jpg" alt="Foto do Lucas">
-    </div>
-  </section>
-
-  <!-- SOBRE MIM -->
-  <section id="sobre" class="secao animar">
-    <h2>Sobre Mim</h2>
-    <div class="caixa-sobre">
-      <p>
-        Olá! Sou estudante técnico em Informática no Cotemig, onde construí uma base sólida em programação. Minha verdadeira paixão está na parte visual e interativa da tecnologia: adoro construir aplicações Front-end fluídas e dar vida a mundos virtuais desenvolvendo jogos nas horas vagas.
-      </p>
-      <p>
-        Além de codar, sou curioso por UI/UX Design. Acredito que o bom código é aquele que entrega não apenas funcionalidade, mas uma experiência boa para o usuário. Atualmente, busco oportunidades de estágio para aplicar minha criatividade em projetos reais.
-      </p>
-    </div>
-  </section>
-
-  <!-- HABILIDADES -->
-  <section id="habilidades" class="secao animar">
-    <h2>Minhas Habilidades</h2>
-    <div class="grid-habilidades">
-      <div class="card-habilidade">
-        <i class="fa-solid fa-code"></i>
-        <h3>Front End</h3>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript <small>(aprendendo)</small></li>
-        </ul>
-      </div>
-
-      <div class="card-habilidade">
-        <i class="fa-solid fa-paint-brush"></i>
-        <h3>Design / UI</h3>
-        <ul>
-          <li>Figma</li>
-          <li>Canva</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section id="projetos" class="secao animar">
-    <h2>Meus Projetos</h2>
-    <div class="grid-projetos">
-
-      <!-- Projeto 1 -->
-      <div class="card-projeto">
-        <div class="capa-projeto">
-          <img src="landingPageImg.png" alt="Projeto Landing Page">
+            <div class="darkMode">
+                <p>Modo Escuro</p>
+                <label class="btnDark">
+                    <input type="checkbox" id="btnDark">
+                    <div class="bolinha"></div>
+                </label>
+            </div>
         </div>
-        <div class="info-projeto">
-          <h3>Plushmob - Landing Page</h3>
-          <p>Projeto de site promocional responsivo para mods e jogos virtuais.</p>
-          <button class="btn-projeto" onclick="abrirJanela('Plushmob - Landing Page', 'Landing page desenvolvida para apresentação de modding e interfaces virtuais.', 'https://github.com/LucasPim1006/LandingPage')">
-            Saber mais
-          </button>
+    </header>
+
+    <section id="inicio" class="eu">
+        <div class="eu-texto">
+            <h1>LUCAS <br> <span>PIMENTEL</span></h1>
+            <p id="texto-digitado"></p>
+            <a href="#projetos" class="btn-principal">Ver Projetos</a>
         </div>
-      </div>
 
-      <!-- Projeto 2 -->
-      <div class="card-projeto">
-        <div class="capa-projeto">
-          <img src="tabelaPeriodica.png" alt="Projeto Tabela Periódica">
+        <div class="eu-foto">
+            <img src="eu.jpg" alt="Foto do Lucas">
         </div>
-        <div class="info-projeto">
-          <h3>Tabela Periódica</h3>
-          <p>Aplicação interativa para consulta rápida dos elementos químicos.</p>
-          <button class="btn-projeto" onclick="abrirJanela('Tabela Periódica Interativa', 'Aplicação feita para ajudar estudantes a consultar elementos químicos com facilidade.', 'https://github.com/LucasPim1006/TabelaPeriodica')">
-            Saber mais
-          </button>
+    </section>
+
+    <section id="sobre" class="secao animar">
+        <h2>Sobre Mim</h2>
+        <div class="caixa-sobre">
+            <p>
+                Olá! Sou estudante técnico em Informática no Cotemig, onde construí uma base sólida em programação. Minha verdadeira paixão está na parte visual e interativa da tecnologia: adoro construir aplicações Front-end fluídas e dar vida a mundos virtuais desenvolvendo jogos nas horas vagas.
+            </p>
+            <p>
+                Além de codar, sou curioso por UI/UX Design. Acredito que o bom código é aquele que entrega não apenas funcionalidade, mas uma experiência boa para o usuário. Atualmente, busco oportunidades de estágio para aplicar minha criatividade em projetos reais.
+            </p>
         </div>
-      </div>
+    </section>
 
+    <section id="habilidades" class="secao animar">
+        <h2>Minhas Habilidades</h2>
+        <div class="parte-habilidades">
+            <div class="card-habilidade">
+                <i class="fa-solid fa-code"></i>
+                <h3>Front End</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript <small>(aprendendo)</small></li>
+                </ul>
+            </div>
+
+            <div class="card-habilidade">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h3>Design / UI</h3>
+                <ul>
+                    <li>Figma</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="secao animar">
+        <h2>Meus Projetos</h2>
+        <div class="parte-projetos">
+
+            <div class="card-projeto">
+                <div class="capa-projeto">
+                    <img src="landingPageImg.png" alt="Projeto Landing Page">
+                </div>
+                <div class="info-projeto">
+                    <h3>Plushmob - Landing Page</h3>
+                    <p>Projeto de site promocional responsivo para mods e jogos virtuais.</p>
+                    <button class="btn-projeto" onclick="abrirJanela('Plushmob - Landing Page', 'Landing page desenvolvida para apresentação de modding e interfaces virtuais.', 'https://github.com/LucasPim1006/LandingPage')">
+                        Saber mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-projeto">
+                <div class="capa-projeto">
+                    <img src="tabelaPeriodica.png" alt="Projeto Tabela Periódica">
+                </div>
+                <div class="info-projeto">
+                    <h3>Tabela Periódica</h3>
+                    <p>Aplicação interativa para consulta rápida dos elementos químicos.</p>
+                    <button class="btn-projeto" onclick="abrirJanela('Tabela Periódica Interativa', 'Aplicação feita para ajudar estudantes a consultar elementos químicos com facilidade.', 'https://github.com/LucasPim1006/TabelaPeriodica')">
+                        Saber mais
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="secao animar">
+        <h2>Entre em Contato</h2>
+
+        <form id="meu-formulario" class="formulario">
+            <div class="campo">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" placeholder="Ex: João Silva" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Seu Telefone:</label>
+                <input type="text" id="telefone" placeholder="(31) 99999-9999" onkeyup="mascaraTelefone(this)" maxlength="15" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" placeholder="seuemail@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+
+        <div class="redes-sociais">
+            <a href="https://github.com/LucasPim1006" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:lucaspimentel1006@gmail.com"><i class="fa-solid fa-envelope"></i> E-mail</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lucas Pimentel | Desenvolvido com HTML, CSS e JS</p>
+    </footer>
+
+    <div id="janela-modal" class="fundo-modal">
+        <div class="caixa-modal">
+            <span class="btn-fechar" onclick="fecharJanela()">&times;</span>
+            <h3 id="titulo-modal">Título</h3>
+            <p id="texto-modal">Descrição aqui...</p>
+            
+            <div class="botoes-modal">
+                <a id="link-github-modal" href="#" target="_blank" class="btn-github">
+                    <i class="fa-brands fa-github"></i> Abrir no GitHub
+                </a>
+                <button onclick="fecharJanela()" class="btn-cancelar">Fechar</button>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- CONTATO -->
-  <section id="contato" class="secao animar">
-    <h2>Entre em Contato</h2>
-
-    <form id="meu-formulario" class="formulario">
-      <div class="campo">
-        <label for="nome">Seu Nome:</label>
-        <input type="text" id="nome" placeholder="Ex: João Silva" required>
-      </div>
-
-      <div class="campo">
-        <label for="telefone">Seu Telefone:</label>
-        <input type="tel" id="telefone" placeholder="(31) 99999-9999" maxlength="15" required>
-      </div>
-
-      <div class="campo">
-        <label for="email">Seu E-mail:</label>
-        <input type="email" id="email" placeholder="seuemail@email.com" required>
-      </div>
-
-      <div class="campo">
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
-      </div>
-
-      <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-    </form>
-
-    <!-- Links de redes sociais -->
-    <div class="redes-sociais">
-      <a href="https://github.com/LucasPim1006" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-      <a href="mailto:lucas@gmail.com"><i class="fa-solid fa-envelope"></i> E-mail</a>
-    </div>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer>
-    <p>&copy; 2026 Lucas Pimentel | Desenvolvido com HTML, CSS e JS</p>
-  </footer>
-
-  <!-- MODAL / JANELA FLUTUANTE -->
-  <div id="janela-modal" class="fundo-modal">
-    <div class="caixa-modal">
-      <span class="btn-fechar" onclick="fecharJanela()">&times;</span>
-      <h3 id="titulo-modal">Título</h3>
-      <p id="texto-modal">Descrição aqui...</p>
-      
-      <div class="botoes-modal">
-        <a id="link-github-modal" href="#" target="_blank" class="btn-github">
-          <i class="fa-brands fa-github"></i> Abrir no GitHub
-        </a>
-        <button onclick="fecharJanela()" class="btn-cancelar">Fechar</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
