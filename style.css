@@ -11,7 +11,7 @@
     --cor-shadow-bolinha: rgb(172, 161, 161);
 }
 
-body.dark {
+.dark {
     --fundo: #0f172a;
     --fundo-card: #1e293b;
     --borda-card: #334155;
@@ -48,7 +48,7 @@ header {
     z-index: 100;
 }
 
-body.dark header {
+.dark header {
     background: rgba(15, 23, 42, 0.9);
 }
 
@@ -104,7 +104,7 @@ body.dark header {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0 2px;
+    padding: 0 0.8px;
 }
 
 .btnDark input {
@@ -120,8 +120,8 @@ body.dark header {
     
 }
 
-body.dark .bolinha {
-    transform: translateX(30px);
+.dark .bolinha {
+    transform: translateX(31px);
 
 }
 
